@@ -1142,7 +1142,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!20 &20537465208380224
 Camera:
   m_ObjectHideFlags: 1
@@ -1178,7 +1177,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!23 &23727840017166328
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -1188,6 +1186,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1203,6 +1202,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1312,12 +1312,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69c4b8aa7684c424d99e12f923fd3b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Left_Controller: {fileID: 0}
-  Right_Controller: {fileID: 0}
+  Left_Controller: {fileID: 1159772178578746}
+  Right_Controller: {fileID: 1159772178578746}
   velocity: {x: 0, y: 0, z: 0}
-  Vert_Multiplier: 0
-  Forw_Multiplier: 0
-  Smooth_Stop_Multiplier: 0
+  Vert_Multiplier: 1.2
+  Forw_Multiplier: 1.2
+  Smooth_Stop_Multiplier: 1
 --- !u!114 &114395384351460444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1482,6 +1482,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1499,6 +1500,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
