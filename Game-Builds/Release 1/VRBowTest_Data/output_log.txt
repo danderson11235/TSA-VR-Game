@@ -1,0 +1,35 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon (TM) R9 200 Series (ID=0x6811)
+    Vendor:   ATI
+    VRAM:     2028 MB
+    Driver:   22.19.662.4
+Begin MonoManager ReloadAssembly
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\System.dll (this message is harmless)
+Platform assembly: A:\TSA VR Game Project Releases and Exports\Project Releases\VRBowTest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.015 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+VR: OpenVR Error! OpenVR failed initialization with error code VRInitError_Init_InstallationNotFound: "Installation Not Found (100)"!
+ 
+(Filename:  Line: 1396)
+
+UnloadTime: 0.842504 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 13c8 -> priority: 1 
+  Thread -> id: 2a54 -> priority: 1 
