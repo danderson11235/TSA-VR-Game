@@ -111,6 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4734438701758524}
   - component: {fileID: 114188557853541274}
+  - component: {fileID: 114566434979177650}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -157,6 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4934447280997758}
   - component: {fileID: 114257810131751852}
+  - component: {fileID: 114828608193660228}
   - component: {fileID: 114066786103267292}
   m_Layer: 0
   m_Name: Controller (right)
@@ -504,6 +506,7 @@ GameObject:
   - component: {fileID: 23727840017166328}
   - component: {fileID: 33993142316254766}
   - component: {fileID: 114954591159573994}
+  - component: {fileID: 114351527149103752}
   m_Layer: 0
   m_Name: '[CameraRig]'
   m_TagString: Untagged
@@ -1134,7 +1137,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
@@ -1170,7 +1173,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1298,6 +1301,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &114351527149103752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1811595032684302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c4b8aa7684c424d99e12f923fd3b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Left_Controller: {fileID: 0}
+  Right_Controller: {fileID: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  Vert_Multiplier: 0
+  Forw_Multiplier: 0
+  Smooth_Stop_Multiplier: 0
 --- !u!114 &114395384351460444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1325,6 +1345,24 @@ MonoBehaviour:
   right: {fileID: 1274408893729080}
   objects: []
   assignAllBeforeIdentified: 0
+--- !u!114 &114566434979177650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1159772178578746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7346a42905a29b347b1f492e8ad7b49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerIndex: 0
+  triggerPressed: 0
+  steamPressed: 0
+  menuPressed: 0
+  padPressed: 0
+  padTouched: 0
+  gripped: 0
 --- !u!114 &114600037430763890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1338,6 +1376,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   origin: {fileID: 0}
+--- !u!114 &114828608193660228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274408893729080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7346a42905a29b347b1f492e8ad7b49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerIndex: 0
+  triggerPressed: 0
+  steamPressed: 0
+  menuPressed: 0
+  padPressed: 0
+  padTouched: 0
+  gripped: 0
 --- !u!114 &114860428099331786
 MonoBehaviour:
   m_ObjectHideFlags: 1
