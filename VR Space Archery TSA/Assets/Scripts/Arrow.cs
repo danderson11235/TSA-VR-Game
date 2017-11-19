@@ -1,25 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class Arrow : MonoBehaviour {
+public class Arrow : MonoBehaviour
+{
 
     private bool isAttached = false;
 
     private bool isFired = false;
 
-    private void OnTriggerStay(Collider other)
-    {
-        AttachArrow();
-    }
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerStay()
     {
         AttachArrow();
     }
 
-    private void Update()
+    void OnTriggerEnter()
     {
-        if (isFired)
+        AttachArrow();
+    }
+
+    void Update()
+    {
+        if (isFired && transform.GetComponent<Rigidbody>().velocity.magnitude > 5f)
         {
             transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity);
         }
@@ -30,14 +31,15 @@ public class Arrow : MonoBehaviour {
         isFired = true;
     }
 
-    //Only when holding the trigger button down will you lock into aim mode
     private void AttachArrow()
     {
         var device = SteamVR_Controller.Input((int)ArrowManager.Instance.trackedObj.index);
         if (!isAttached && device.GetTouch(SteamVR_Controller.ButtonMask.Trigger))
         {
-            ArrowManager.Instance.AttachArrowToBow();
+            ArrowManager.Instance.AttachBowToArrow();
             isAttached = true;
         }
     }
+
+
 }
