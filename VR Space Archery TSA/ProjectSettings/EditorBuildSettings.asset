@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game Level.unity
-    guid: f255c44a4c949644e8a18ab9167e6f3d
+    path: Assets/Scenes/VR Scene.unity
+    guid: ebbdb866cd76df946b605f1a4e5ed6e1
