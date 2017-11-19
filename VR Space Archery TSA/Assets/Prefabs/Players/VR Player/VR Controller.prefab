@@ -1336,6 +1336,7 @@ MonoBehaviour:
   stringStartPoint: {fileID: 1580514625105616}
   arrowPrefab: {fileID: 1489396877216908, guid: 45d9262abaf6d1448bdd7bd8e985dbd9,
     type: 2}
+  Arrow_gravity: 0
 --- !u!114 &114188557853541274
 MonoBehaviour:
   m_ObjectHideFlags: 1

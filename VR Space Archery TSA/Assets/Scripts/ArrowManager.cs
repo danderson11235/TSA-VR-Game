@@ -20,6 +20,8 @@ public class ArrowManager : MonoBehaviour
 
     private bool isAttached = false;
 
+    public float Draw_Strength = 5f;
+
     void Awake()
     {
         if (Instance == null)
@@ -50,7 +52,7 @@ public class ArrowManager : MonoBehaviour
         if (isAttached)
         {
             float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
-            stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(5f * dist, 0f, 0f);
+            stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(Draw_Strength * dist, 0f, 0f);
 
             var device = SteamVR_Controller.Input((int)trackedObj.index);
             if (device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger))
